@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="th" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>CLASSROOM63</title>
+    <link rel="icon" href="../img/logo.png" type="image/png">  <!-- เปลี่ยนเส้นทางตามตำแหน่งที่เก็บไฟล์ -->
+    <link rel="apple-touch-icon" href="../img/logo.png">  <!-- สำหรับ iOS -->
+    <link rel="stylesheet" href="../css/login.css">
+  </head>
+<body>
+  <div class="text-hightscool">
+    <h1 style="color: #ffeb3b">CLASSROOM63</h1>
+  </div>
+  <div class="container">
+    <!-- LEFT: Login form -->
+    <div class="forms">
+      <h1>เข้าสู่ระบบ</h1>
+      <form action="../login-register/login_db.php" method="POST">
+        <div class="inputGroup">
+          <input type="text" name="username" required autocomplete="off">
+          <label for="username">ชื่อผู้ใช้</label>
+        </div>
+        <div class="inputGroup">
+          <input type="password" name="password" required autocomplete="off">
+          <label for="password">รหัสผ่าน</label>
+        </div>
+        <button type="submit">เข้าสู่ระบบ</button>
+        <p>ยังไม่มีบัญชี <a href="../login-register/register.html">สมัครสมาชิก</a></p>
+      </form>
+    </div>
+    <!-- RIGHT: Additional Info or Tips -->
+    <div class="signup-form">
+      <h1>คำเตือน!</h1>
+      <p>- ตรวจสอบ URL: ให้แน่ใจว่าเว็บไซต์ที่คุณกำลังจะเข้าสู่ระบบใช้ URL ที่ปลอดภัย เช่น https:// และมีสัญลักษณ์ล็อกอยู่ข้างหน้า URL เพื่อยืนยันว่าเว็บไซต์นั้นปลอดภัย</p>
+      <p>- ใช้รหัสผ่านที่แข็งแกร่ง: รหัสผ่านควรประกอบด้วยตัวอักษรใหญ่ ตัวอักษรเล็ก ตัวเลข และสัญลักษณ์พิเศษ การใช้รหัสผ่านที่ยาวและหลากหลายจะทำให้ระบบปลอดภัยขึ้น</p>
+      <p>- เปิดใช้งานการยืนยันตัวตนสองขั้นตอน (2FA): เพื่อเพิ่มความปลอดภัยในการเข้าสู่ระบบ ควรเปิดใช้งานการยืนยันตัวตนแบบสองขั้นตอน โดยใช้รหัสที่ส่งไปยังโทรศัพท์หรือแอปพลิเคชันอื่นๆ</p>
+      <p>- ระมัดระวังการเข้าสู่ระบบในอุปกรณ์สาธารณะ: หลีกเลี่ยงการล็อกอินเข้าสู่บัญชีส่วนตัวจากคอมพิวเตอร์หรืออุปกรณ์สาธารณะ เพราะอาจมีการบันทึกข้อมูลรหัสผ่านหรือการใช้งานโดยไม่ได้รับอนุญาต</p>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

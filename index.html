@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>เช็คการล็อคอิน</title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+    // ฟังก์ชันตรวจสอบสถานะการล็อคอิน
+    function checkLoginStatus() {
+      // ใช้ localStorage ในการเก็บสถานะการล็อคอิน
+      const loggedIn = localStorage.getItem('loggedIn');
+      
+      // ถ้าผู้ใช้ล็อคอินแล้ว (มีค่า loggedIn)
+      if (loggedIn === 'true') {
+        // แสดง SweetAlert2 และหน่วงเวลาก่อนเปลี่ยนหน้า
+        Swal.fire({
+          title: 'เข้าสู่ระบบสำเร็จ',
+          text: 'โปรดรอสักครู่...',
+          icon: 'success',
+          timer: 2000, // ตั้งเวลาของ SweetAlert2 ให้แสดง 2 วินาที
+          showConfirmButton: false
+        }).then(function() {
+          // ไปที่หน้า dashboard หลังจาก SweetAlert2 ปิด
+          window.location.href = '../dashboard/index.php';
+        });
+      } else {
+        // ถ้ายังไม่ได้ล็อคอิน ให้ไปที่หน้า login
+        window.location.href = '../project/login-register/login.html';
+      }
+    }
+    
+    // เมื่อโหลดหน้าแล้วให้ตรวจสอบสถานะการล็อคอิน
+    window.onload = checkLoginStatus;
+  </script>
+</head>
+<body>
+  <!-- เนื้อหาของหน้า -->
+</body>
+</html>

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    font-family: "Kanit", serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+body {
+    background-image: url("../img/bg.jpg");
+    background-size: cover;       /* ทำให้ภาพครอบคลุมพื้นที่ทั้งหมด */
+    background-position: center;  /* จัดตำแหน่งภาพให้ตรงกลาง */
+    background-repeat: no-repeat; /* ป้องกันไม่ให้ภาพซ้ำ */
+    height: 100%;                /* ความสูงของ body ต้องครอบคลุมทั้งหน้าจอ */
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.forms, .signup-form {
+    width: 100%;
+    padding: 30px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+
+.forms {
+    background-color: #5d5d5d;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.signup-form {
+    background-color: rgba(29, 29, 29, 0.9);
+    border-radius: 0px 20px 20px 0px;
+}
+
+.forms h1, .signup-form h1 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+
+.signup-form h1 {
+    color: rgb(194, 12, 12);
+}
+
+p {
+    font-size: 15px;
+    color: #fff;
+    padding: 5px;
+    font-weight: 500;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.inputGroup {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.inputGroup input {
+    color: #fff;
+    font-size: 100%;
+    padding: 0.8em;
+    outline: none;
+    border: 2px solid rgb(31, 31, 31);
+    background-color: transparent;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.inputGroup label {
+    font-size: 100%;
+    position: absolute;
+    left: 0;
+    padding: 0.8em;
+    margin-left: 0.5em;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: #ccc;
+}
+
+.inputGroup :is(input:focus, input:valid) ~ label {
+    transform: translateY(-50%) scale(.9);
+    margin-left: 1.3em;
+    padding: 0.4em;
+    background-color: #5d5d5d;
+}
+
+.inputGroup :is(input:focus, input:valid) {
+    border-color: #ffffff;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    border: 2.5px solid #000;
+    background-color: rgb(255, 196, 0);
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 0px 20px -20px;
+}
+
+button:hover {
+    background-color: #fca400;
+    box-shadow: 0px 0px 20px -18px;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+a {
+    color: rgb(0, 183, 255);
+    text-decoration: none;
+}
+
+.text-hightscool {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
